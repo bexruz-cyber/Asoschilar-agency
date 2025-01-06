@@ -400,7 +400,7 @@
           Ariza qoldiring va biz tez orada siz bilan bog‘lanamiz!
         </p>
       </div>
-      <form action="" name="application-form-1" class="develop-row ">
+      <form action="" name="contact-form-1" class="develop-row ">
         <div class="form-col">
           <label class="develop-col-title" for="name-1">Ismingiz</label><br>
           <input id="name-1" class="develop-col-inp" type="text" name="name" required placeholder="Ism Familiya"> <br>
@@ -414,7 +414,7 @@
         </div>
         <div class="form-col">
           <label for="">Kompaniyangiz</label><br>
-          <input type="text" required placeholder="Kompaniya nomi">
+          <input type="text" id="company-1" required placeholder="Kompaniya nomi">
         </div>
         <button class="form-btn" type="submit">Yuborish</button>
 
@@ -731,21 +731,21 @@
           Ariza qoldiring va biz tez orada siz bilan bog‘lanamiz!
         </p>
       </div>
-      <form  name="contact-form" class="develop-row">
+      <form name="contact-form-2" class="develop-row">
         <div class="form-col">
           <label class="develop-col-title" for="name-2">Ismingiz</label><br>
           <input id="name-2" class="develop-col-inp" type="text" name="name" required placeholder="Ism Familiya"> <br>
-          <small id="nameErrorId" class="error-message" id="phone-error"></small>
+          <small class="error-message" id="name-error"></small>
         </div>
         <div class="form-col">
           <label class="develop-col-title" for="phone-2">Telefon raqamingiz</label><br>
           <input id="phone-2" class="develop-col-inp" type="tel" name="phone" value="+998 " required placeholder="+998">
           <br>
-          <small  class="error-message" id="phone-error1"></small>
+          <small class="error-message" id="phone-error"></small>
         </div>
         <div class="form-col">
           <label for="">Kompaniyangiz</label><br>
-          <input type="text" required placeholder="Kompaniya nomi" name="company">
+          <input type="text" id="company-2" required placeholder="Kompaniya nomi" name="company">
         </div>
         <button class="form-btn" type="submit">Yuborish</button>
 
@@ -774,6 +774,21 @@
     </div>
   </footer>
   <!-- End footer -->
+
+
+  <div class="bgCloseModal"></div>
+
+
+  <div class="formModal">
+    <div class="formModalContainer">
+      <button class="formModalClose">
+        <img src="./image/svg/close.svg" alt="close">
+      </button>
+      <img src="./image/svg/Valid.svg" class="formModamValid formModalCenterIcon" alt="">
+      <img src="./image/svg/invalid.svg" class="formModamInvalid formModalCenterIcon" alt="">
+      <p class="formModalText">Thank you! Your data has been submitted</p>
+    </div>
+  </div>
 
   <script src="./js/main.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
